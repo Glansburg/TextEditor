@@ -22,6 +22,11 @@ module.exports = () => {
         template: './index.html',
         title: 'TODOs List'
       }),
+    
+    new InjectManifest({
+      swSrc: './src/src-sw.js',
+      swDest: 'service-worker.js',
+    }), 
       new GenerateSW(),
       new WebpackPwaManifest({
         name: 'TODOs List App',
