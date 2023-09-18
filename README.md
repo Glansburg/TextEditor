@@ -13,7 +13,7 @@ Through this project I learned:
 ## Being new to web development I came across some issues you may see obvious such as:
 * running into a lot of errors to fix
 * getting things to populate correctly
- ## Instalation
+ ## Installation
 N/A
 
 ## Usage
