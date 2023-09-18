@@ -17,7 +17,7 @@ Through this project I learned:
 N/A
 
 ## Usage
-To view this website go to this link:
+To view this website go to this link: https://text-editorjg-76d429acee63.herokuapp.com/ 
 <img width="863" alt="TextEditor" src="https://github.com/Glansburg/TextEditor/assets/117139285/060dbd8a-11e6-4557-869f-d6e3c8a685a4">
 
 ## Credits
