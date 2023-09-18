@@ -1,0 +1,32 @@
+{
+  "icons": [
+    {
+      "src": "./client/icons/icon_64x64.2e275b1fbd8b01328a40479f6ec2af4d.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./client/icons/icon_32x32.0edb99f298901426aed02abbd32d8cc1.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./client/icons/icon_24x24.e1fa43a836c511e206fdc44739d56aed.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "./client/icons/icon_16x16.84ce101641aaac1ebf6401baf9942e8f.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "name": "TODOs List App",
+  "short_name": "TODOs",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Keep track of important tasks.",
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "TODOs List App",
+  "short_name": "TODOs",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Keep track of important tasks.",
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
+}

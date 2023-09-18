@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
+const { GenerateSW } = require('workbox-webpack-plugin');
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -24,11 +25,12 @@ module.exports = () => {
       }),
     
     new InjectManifest({
-      swSrc: './src/src-sw.js',
-      swDest: 'service-worker.js',
+      swSrc: './src-sw.js',
+      swDest: 'src-sw.js',
     }), 
       new GenerateSW(),
       new WebpackPwaManifest({
+        fingerprints: false,
         name: 'TODOs List App',
         short_name: 'TODOs',
         description: 'Keep track of important tasks.',
@@ -38,9 +40,11 @@ module.exports = () => {
         publicPath: './',
         icons: [
           {
-            src: path.resolve('favicon.ico'),
-            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
-            destination: path.join('client', 'icons')
+            src: path.resolve('writer2.png'),
+            sizes: [16, 24, 32, 64, 96, 144], // multiple sizes
+            destination: path.join('assets', 'icons'),
+            purpose: "any",
+            fingerprints: false
           }
         ]
       })
