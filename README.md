@@ -1,11 +1,28 @@
-# 19 Progressive Web Applications (PWA): Text Editor
+# TextEditor
 
-## Your Task
+## Hello Welcome to the readMe. page.
+The motivation behind this page was to learn more about PWA's working with indexDB, SEO and service workers.
+## What I learned
+Through this project I learned:
+* About service workers
+* Learned about use of PWA's
+* Learned about condensing data
+* Learned how to use indexDB
+* That time invested was time well spent and I learned more. 
+  
+## Being new to web development I came across some issues you may see obvious such as:
+* running into a lot of errors to fix
+* getting things to populate correctly
+ ## Installation
+N/A
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+## Usage
+To view this website go to this link: https://text-editorjg-76d429acee63.herokuapp.com/ 
+<img width="863" alt="TextEditor" src="https://github.com/Glansburg/TextEditor/assets/117139285/060dbd8a-11e6-4557-869f-d6e3c8a685a4">
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+## Credits
 
+<<<<<<< HEAD
 To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
 
 You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
@@ -142,3 +159,6 @@ You are required to submit the following for review:
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+Made by Joel Getzke, Duluth MN
+>>>>>>> 210873fee9cedecb2e20e3627c5f8256fcb0061f
