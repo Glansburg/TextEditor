@@ -15,7 +15,7 @@ You will deploy this full-stack application to Heroku using the [Heroku Deployme
 ## User Story
 
 ```md
-AS A developer
+As A developer
 I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
