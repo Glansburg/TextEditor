@@ -20,12 +20,18 @@
     "style-loader": "^3.2.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.0.0",
+    "wenppack-dev-server": "^4.0.0",
     "webpack-pwa-manifest": "^4.3.0",
     "workbox-webpack-plugin": "^6.2.4"
   },
   "dependencies": {
     "code-mirror-themes": "^1.0.0",
-    "idb": "^6.1.2"
+    "idb": "^6.1.2",
+    "stale-while-revalidate": "^0.2.0",
+    "workbox-cacheable-response": "^7.0.0",
+    "workbox-expiration": "^7.0.0",
+    "workbox-recipes": "^7.0.0",
+    "workbox-routing": "^7.0.0",
+    "workbox-strategies": "^7.0.0"
   }
 }
