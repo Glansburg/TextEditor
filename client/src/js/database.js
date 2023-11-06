@@ -41,7 +41,7 @@ export const getDb = async (id) => {
   const store = tx.objectStore("jate");
 
   // Use the `.get` method with the provided ID to retrieve the specific content item
-  request = store.get(1)
+  const request = store.get(1)
   const result = await request;
 
   if (result) {
