@@ -1,4 +1,5 @@
 import { openDB } from "idb";
+import { v4 as uuidv4 } from 'uuid';
 
 const initdb = async () =>
   openDB("jate", 1, {
@@ -25,7 +26,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
 
   // Store the content along with the generated ID
-  const request = store.put({ id, content });
+  const request = store.put({ id: 1, value: content });
   const result = await request;
 
   console.log("Data saved to the database", result);
@@ -40,15 +41,14 @@ export const getDb = async (id) => {
   const store = tx.objectStore("jate");
 
   // Use the `.get` method with the provided ID to retrieve the specific content item
-  const request = store.get(id);
+  request = store.get(1)
   const result = await request;
 
   if (result) {
-    console.log('Result:', result);
-    return result;
+    console.log('Data retrieved from the database', result.value);
   } else {
-    console.log(`Content with ID ${id} not found.`);
-    return null; // or throw an error or handle the not-found case as needed
+    console.log('Data not found in the database');
+    return result?.value; // or throw an error or handle the not-found case as needed
   }
 };
 initdb();
