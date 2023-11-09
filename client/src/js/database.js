@@ -1,5 +1,5 @@
 import { openDB } from "idb";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const initdb = async () =>
   openDB("jate", 1, {
@@ -13,12 +13,11 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
   console.log("Post content to the database");
 
   // Generate a unique ID for the content using the 'uuid' library
-  const { v4: uuidv4 } = require('uuid');
+  const { v4: uuidv4 } = require("uuid");
   const id = uuidv4();
 
   const jateDb = await openDB("jate", 1);
@@ -32,7 +31,7 @@ export const putDb = async (content) => {
   console.log("Data saved to the database", result);
 };
 
-// TODO: Add logic for a method that gets all the content from the database
+// Add logic for a method that gets all the content from the database
 export const getDb = async (id) => {
   console.log("Get content from the database by ID");
 
@@ -40,14 +39,14 @@ export const getDb = async (id) => {
   const tx = jateDb.transaction("jate", "readonly");
   const store = tx.objectStore("jate");
 
-  // Use the `.get` method with the provided ID to retrieve the specific content item
-  const request = store.get(1)
+  // Uses the `.get` method with the provided ID to retrieve the specific content item
+  const request = store.get(1);
   const result = await request;
 
   if (result) {
-    console.log('Data retrieved from the database', result.value);
+    console.log("Data retrieved from the database", result.value);
   } else {
-    console.log('Data not found in the database');
+    console.log("Data not found in the database");
     return result?.value; // or throw an error or handle the not-found case as needed
   }
 };
