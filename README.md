@@ -18,7 +18,8 @@ N/A
 
 ## Usage
 To view this website go to this link: https://jate-text-editor23-0453618ed693.herokuapp.com//  
-<img width="863" alt="TextEditor" src="https://github.com/Glansburg/TextEditor/assets/117139285/060dbd8a-11e6-4557-869f-d6e3c8a685a4">
+<img width="848" alt="Jate" src="https://github.com/JoelGetzke/TextEditor/assets/117139285/5afa39ab-86a6-4813-9434-a69024733c85">
+
 
 ## Credits
 
